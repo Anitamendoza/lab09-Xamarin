@@ -19,7 +19,7 @@ namespace lab09
             InitializeComponent();
             var image = new Image
             {
-                Source = "",
+                Source = "cat.jpeg",
                 HorizontalOptions = LayoutOptions.Center,
                 VerticalOptions = LayoutOptions.CenterAndExpand,
             };
@@ -50,16 +50,16 @@ namespace lab09
             tapCount++;
             label.Text = String.Format("{0} tap{1} so far!",
                 tapCount,
-                tapCount == 1 ? "" : "s");
+                tapCount == 1 ? "gatito.jpeg" : "s");
             var imageSender = (Image)sender;
 
             if (tapCount % 2 == 0)
             {
-                imageSender.Source = "";
+                imageSender.Source = "cat.jpeg";
             }
             else
             {
-                imageSender.Source = "";
+                imageSender.Source = "gatito.jpeg";
             }
         }
       

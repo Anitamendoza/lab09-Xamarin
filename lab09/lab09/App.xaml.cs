@@ -9,12 +9,14 @@ namespace lab09
     public partial class App : Application
     {
 
+        public static float ScreenHeight { get; set; }
+        public static float ScreenWidth { get; set; }
         public App()
         {
             InitializeComponent();
 
-            DependencyService.Register<MockDataStore>();
-            MainPage = new AppShell();
+            MainPage = new NavigationPage(new MainPage());
+            //MainPage = new MainPage();
         }
 
         protected override void OnStart()

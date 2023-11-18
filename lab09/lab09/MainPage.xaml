@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="lab09.MainPage">
+    <!-- Recurso de estilo para los botones -->
+    <ContentPage.Resources>
+        <Style x:Key="ButtonStyle" TargetType="Button">
+            <Setter Property="TextColor" Value="White" />
+            <Setter Property="FontSize" Value="16" />
+            <Setter Property="CornerRadius" Value="5" />
+            <!-- Otros estilos que desees agregar -->
+        </Style>
+    </ContentPage.Resources>
+
+    <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+        <!-- Título centrado al medio y en negrita -->
+        <Label Text="BIENVENIDO JOSE DAVILA" FontSize="20" FontAttributes="Bold" Margin="0,10,0,0"></Label>
+
+        <!-- Espacio antes de los botones -->
+        <StackLayout Margin="0,20,0,0" Orientation="Vertical">
+            <!-- Estilo para los botones -->
+            <Button x:Name="Item1" Text="TapDemo" BackgroundColor="Green" Style="{StaticResource ButtonStyle}" />
+            <Button x:Name="Item2" Text="PanDemo" BackgroundColor="Blue" Style="{StaticResource ButtonStyle}" />
+            <Button x:Name="Item3" Text="SwipedDemo" BackgroundColor="Gray" Style="{StaticResource ButtonStyle}" />
+            <Button x:Name="Item4" Text="PinchDemo" BackgroundColor="Red" Style="{StaticResource ButtonStyle}" />
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

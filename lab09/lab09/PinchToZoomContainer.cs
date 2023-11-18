@@ -5,7 +5,7 @@ using Xamarin.Essentials;
 using Xamarin.Forms.Internals;
 using Xamarin.Forms;
 
-namespace lab09
+namespace lab09.Views
 {
     public class PinchToZoomContainer : ContentView
     {

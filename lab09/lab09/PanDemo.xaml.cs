@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using lab09.Views;
 
-namespace lab09
+
+namespace lab09.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class PanDemo : ContentPage
